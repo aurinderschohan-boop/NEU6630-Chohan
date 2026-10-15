@@ -1,0 +1,13 @@
+{
+    "ground_truth_records": 222,
+    "prediction_records": 104,
+    "successful_predictions": 104,
+    "failed_predictions": 0,
+    "non_empty_predictions": 96,
+    "average_confidence": 0.4114415788325729,
+    "pages_evaluated": 104,
+    "valid_predictions": 81,
+    "exact_matches": 0,
+    "exact_match_rate": 0.0,
+    "average_best_tanimoto": 0.0063331046369573
+}

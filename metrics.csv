@@ -1,0 +1,2 @@
+ground_truth_records,prediction_records,successful_predictions,failed_predictions,non_empty_predictions,non_empty_prediction_rate,average_confidence
+222,104,104,0,96,0.9230769230769231,0.41144157883257293
