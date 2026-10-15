@@ -54,7 +54,6 @@ No API keys, passwords, or personal computer paths are required.
 
 The notebook follows this general workflow:
 
-```text
 PDF files
 → PDF page images
 → MolScribe predictions
