@@ -5,7 +5,14 @@
 
 This project uses MolScribe to benchmark molecular structure extraction from six research papers provided by the instructor. MolScribe was used with instructor approval as the SMILES extraction tool for this assignment.
 
-The main goal was to build a Python pipeline that loads the provided files, converts the PDF pages into images, runs MolScribe, saves the predicted SMILES and confidence scores, and calculates evaluation metrics.
+The goal was to create a simple Python pipeline that:
+
+- Loads the provided benchmark files
+- Converts the PDF pages into images
+- Runs MolScribe on the page images
+- Saves the predicted SMILES and confidence scores
+- Calculates evaluation metrics
+- Saves the results in CSV and JSON files
 
 The project was completed in Google Colab using a T4 GPU.
 
@@ -24,6 +31,20 @@ The instructor also provided a CSV file containing 222 confirmed ground-truth SM
 
 The original PDFs and ground-truth CSV are not included in this public repository.
 
+## Repository Files
+
+This repository contains:
+
+- `Assignment_1_2_Benchmarking_Code_Aurinder_Chohan.ipynb`
+- `requirements.txt`
+- `molscribe_predictions.csv`
+- `metrics.csv`
+- `evaluation_results.csv`
+- `evaluation_metrics.csv`
+- `final_summary.json`
+- `.gitignore`
+- `README.md`
+
 ## Notebook Sections
 
 The notebook is organized into the following sections:
@@ -41,22 +62,25 @@ The notebook is organized into the following sections:
 
 ## How to Run the Project
 
-1. Open the notebook in Google Colab.
-2. Change the runtime type to a T4 GPU.
-3. Run the Environment Setup section.
-4. Upload the six PDF files and ground-truth CSV when prompted.
-5. Run each remaining section in order.
-6. Download the generated CSV and JSON output files.
+1. Open the Jupyter notebook in Google Colab.
+2. From the Colab menu, select `Runtime`.
+3. Select `Change runtime type`.
+4. Choose a T4 GPU as the hardware accelerator.
+5. Run the Environment Setup section.
+6. Upload the six PDF files and the original ground-truth CSV when prompted.
+7. Run each remaining notebook section in order.
+8. Download the generated CSV and JSON output files.
 
-No API keys, passwords, or personal computer paths are required.
+No API keys, passwords, credentials, or personal computer paths are required.
 
 ## Pipeline
 
-The notebook follows this general workflow:
+The notebook follows this workflow:
 
+```text
 PDF files
 → PDF page images
-→ MolScribe predictions
-→ SMILES and confidence scores
+→ MolScribe inference
+→ Predicted SMILES and confidence scores
 → Evaluation metrics
-→ CSV and JSON results
+→ CSV and JSON result files
